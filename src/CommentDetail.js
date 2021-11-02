@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-export default function CommentDetail({author}) {
+export default function CommentDetail({author, comment}) {
   return (
     <div className="comment">
       <a href="/" className="avatar">
@@ -13,7 +13,7 @@ export default function CommentDetail({author}) {
         <div className="metadata">
           <span className="date">Today at 6:00PM</span>
         </div>
-        <div classNName="text">Nice blog post!</div>
+        <div classNName="text">{comment}</div>
       </div>
     </div>
   );
