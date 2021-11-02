@@ -16,10 +16,15 @@ const App = () => {
 
   return (
     <div className="ui container comments">
-      <ApprovalCard/>
-      <CommentDetail author="Sam" comment={comment[randomNum()]} timeAgo="Today at 4:45PM" avatar={faker.image.avatar()}/>
-      <CommentDetail author="Alex" comment={comment[randomNum()]} timeAgo="Today at 2:45PM" avatar={faker.image.avatar()}/>
-      <CommentDetail author="Jane" comment={comment[randomNum()]} timeAgo="Yesterday at 8:45PM" avatar={faker.image.avatar()}/>
+      <ApprovalCard>
+        <CommentDetail author="Sam" comment={comment[randomNum()]} timeAgo="Today at 4:45PM" avatar={faker.image.avatar()}/>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail author="Alex" comment={comment[randomNum()]} timeAgo="Today at 2:45PM" avatar={faker.image.avatar()}/>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail author="Jane" comment={comment[randomNum()]} timeAgo="Yesterday at 8:45PM" avatar={faker.image.avatar()}/>
+      </ApprovalCard>
     </div>
   )
 };
